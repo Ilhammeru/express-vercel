@@ -3,8 +3,8 @@ const app = express();
 
 app.use(express.json({ extended: false }));
 
-app.use("/api/product", (req, res) => {
-    res.json({message: "Product"});
+app.get("/api/product", (req, res) => {
+    res.json({message: "Producttt"});
 });
 
 const PORT = 3000;
